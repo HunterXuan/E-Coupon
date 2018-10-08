@@ -1,0 +1,75 @@
+<view class="page">
+  <view>
+    <image style="height:{{picWidth}}px;width:{{picWidth}}px;" src="{{couponInfo.picUrl}}"></image>
+  </view>
+
+  <view class="page_bd">
+    <van-row>
+      <van-col span="24">
+        <text>{{couponInfo.title}}</text>
+      </van-col>
+    </van-row>
+
+    <van-row>
+      <van-col span="12">
+        <text class="original-price">现价￥{{couponInfo.originalPrice}}</text>
+      </van-col>
+      <van-col span="12" class="text-right">
+        <text class="sale-count-text">已售 {{couponInfo.saleCount}} 件</text>
+      </van-col>
+    </van-row>
+
+    <van-row>
+      <van-col span="12">
+        <text class="present-price">券后价￥<text class="present-price-num">{{ couponInfo.presentPrice }}</text></text>
+      </van-col>
+      <van-col span="12" class="text-right">
+        <van-tag type="danger">{{ couponInfo.isTmall ? "天猫" : (couponInfo.isTQG ? "淘抢购" : (couponInfo.isJHS ? "聚划算" : "淘宝")) }}</van-tag>
+      </van-col>
+    </van-row>
+
+    <van-row custom-class="coupon-time-row">
+      <van-col span="24">
+        <view class="text-center"><text>{{ couponInfo.couponPrice }} 元优惠券</text></view>
+        <view class="text-center"><text>使用期限: {{ couponInfo.couponStartTime }} - {{ couponInfo.couponEndTime }}</text></view>
+      </van-col>
+    </van-row>
+
+    <van-row custom-class="coupon-intro-row">
+      <van-col span="24">
+        <text>{{ couponInfo.introduction }}</text>
+      </van-col>
+    </van-row>
+
+    <van-row custom-class="coupon-intro-pic-row">
+      <van-col span="24">
+        <image style="width:100%;" src="{{couponInfo.longPicUrl}}" mode="widthFix"/>
+      </van-col>
+    </van-row>
+    
+  </view>
+
+  <view>
+    <van-submit-bar
+      label="券后价 "
+      price="{{ couponInfo.presentPrice * 100 }}"
+      button-text="立即领券"
+      bind:submit="showTpwd"
+      loading="{{ !hasTpwd }}"
+    />
+  </view>
+
+  <van-dialog
+    use-slot
+    title="淘口令"
+    show="{{ showTpwdDialog }}"
+    confirm-button-text="一键复制"
+    bind:confirm="copyTpwd"
+  >
+    <van-row custom-class="coupon-tpwd-text">
+      <van-col span="24">
+        <text selectable="true">复制框内整段文字，打开「手机淘宝」即可领券购买。{{ tpwd }}</text>
+      </van-col>
+    </van-row>
+  </van-dialog>
+</view>

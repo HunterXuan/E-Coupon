@@ -1,0 +1,59 @@
+.page_bd {
+  padding: 0 12px 50px 12px;
+}
+
+.original-price {
+  color: #999;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+
+.present-price {
+  color: #ff6666;
+  font-size: 12px;
+}
+
+.present-price-num {
+  font-size: 18px;
+}
+
+.sale-count-text {
+  color: #999;
+  font-size: 12px;
+}
+
+.coupon-time-row {
+  color: #fff;
+  font-size: 12px;
+  padding: 10px;
+  margin: 10px 0;
+  outline: 2px solid #fff;
+  outline-offset: -5px;
+  background-color: #ff6666;
+}
+
+.coupon-intro-row {
+  font-size: 12px;
+  padding: 10px;
+  margin: 0 0 10px 0;
+  border: 1px dashed #999;
+}
+
+.coupon-intro-pic-row {
+  box-shadow: 1px 10px 5px #999;
+}
+
+.coupon-tpwd-text {
+  font-size: 14px;
+  padding: 10px;
+  margin: 5px;
+  border: 1px dashed #999;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}

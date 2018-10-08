@@ -1,0 +1,35 @@
+/* pages/favour/favour.wxss */
+.search-btn {
+  padding: 0 8px;
+  background-color: #fff;
+}
+
+.coupon-list-title {
+  padding-bottom: 5px;
+}
+
+.coupon-list-desc {
+  color: #b6b6b6;
+  font-size: 12px;
+}
+
+.coupon-list-footer {
+  color: #b6b6b6;
+  font-size: 12px;
+}
+
+.original-price {
+  text-decoration: line-through;
+}
+
+.present-price {
+  color: #ff6666;
+}
+
+.present-price-num {
+  font-size: 18px;
+}
+
+.text-right {
+  text-align: right;
+}

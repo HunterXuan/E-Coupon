@@ -1,0 +1,4 @@
+@import "miniprogram_npm/vant-weapp/common/index.wxss";
+.top-search-bar .van-search {
+  background-color: #ff6666 !important;
+}

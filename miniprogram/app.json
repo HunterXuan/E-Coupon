@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/favour/favour",
+    "pages/index/index",
+    "pages/ninenine/ninenine",
+    "pages/search/search",
+    "pages/time/time",
+    "pages/hot/hot",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#f7f7f7",
+    "navigationBarBackgroundColor": "#ff6666",
+    "navigationBarTitleText": "一点优惠",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#ff6666",
+    "backgroundColor": "#f7f7f7",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/favour/favour",
+        "text": "首页",
+        "iconPath": "images/favour.png",
+        "selectedIconPath": "images/favour-on.png"
+      },
+      {
+        "pagePath": "pages/ninenine/ninenine",
+        "text": "9.9包邮",
+        "iconPath": "images/99.png",
+        "selectedIconPath": "images/99-on.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "超级搜",
+        "iconPath": "images/search.png",
+        "selectedIconPath": "images/search-on.png"
+      },
+      {
+        "pagePath": "pages/time/time",
+        "text": "淘抢购",
+        "iconPath": "images/time.png",
+        "selectedIconPath": "images/time-on.png"
+      },
+      {
+        "pagePath": "pages/hot/hot",
+        "text": "热销",
+        "iconPath": "images/hot.png",
+        "selectedIconPath": "images/hot-on.png"
+      }
+    ]
+  }
+}
